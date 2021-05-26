@@ -39,7 +39,7 @@ function store() {
     localStorage.setItem("name", name.value);
     localStorage.setItem("pw", pw.value);
     alert("Your account has been created");
-    window.location = "index.html";
+    window.location = "toDoList.html";
     return false;
   }
 }
@@ -54,7 +54,7 @@ function check() {
   let userRemember = document.getElementById("rememberMe");
 
   if (userName.value == storedName && userPw.value == storedPw) {
-    window.location = "index.html";
+    window.location = "toDoList.html";
     alert("You are logged in.");
     return false;
   } else {
