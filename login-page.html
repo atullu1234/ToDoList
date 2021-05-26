@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="register" class="register">
-      <form name="form-register">
+      <form name="form-register" id="form-register">
         <h1>REGISTER</h1>
 
         <label for="name">Email</label>
@@ -32,12 +32,10 @@
         />
         
       </form>
-     
-      
-    </div>
-  
+      <a href="#form-login" id="sign-in-link">Already one of us?</a>
+      </div>
       <div id="login" class="login">
-      <form name="form-login">
+      <form name="form-login" id="form-login">
         <h1>SIGN IN</h1>
 
         <label for="userName">Email</label>
@@ -59,7 +57,7 @@
         <input id="login_btn" type="submit" value="Login" onclick="return check()" />
      
       </form>
-      <button id="register-button" type="button">New here?</button>
+      <a href="#form-register" id="register-link">New here?</a>
       
     </div>
     <script src="./login-page.js"></script>

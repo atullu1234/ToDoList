@@ -1,15 +1,15 @@
 const loginForm = document.getElementById("login");
 const createAccountForm = document.getElementById("register");
-const registerButton = document.getElementById("register-button");
-const signInButton = document.getElementById("sign-in-button");
+const registerLink = document.getElementById("register-link");
+const signInLink = document.getElementById("sign-in-link");
 
-registerButton.addEventListener("click", () => {
+registerLink.addEventListener("click", () => {
   console.log("entered");
   loginForm.style.display = "none";
   createAccountForm.style.display = "inline-block";
 });
 
-signInButton.addEventListener("click", () => {
+signInLink.addEventListener("click", () => {
   loginForm.style.display = "inline-block";
   createAccountForm.style.display = "none";
 });
