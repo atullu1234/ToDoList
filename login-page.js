@@ -3,6 +3,9 @@ const createAccountForm = document.getElementById("register");
 const registerLink = document.getElementById("register-link");
 const signInLink = document.getElementById("sign-in-link");
 
+loginForm.style.display = "inline-block";
+createAccountForm.style.display = "none";
+
 registerLink.addEventListener("click", () => {
   console.log("entered");
   loginForm.style.display = "none";
